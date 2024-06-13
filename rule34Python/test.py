@@ -1,7 +1,8 @@
 
 
-import yandereRe 
-a = input()
-r=yandereRe.get_random_post(limit=3)
+import rule34
 
-print(r)
+r=rule34.search("helltaker", limit=3)
+a= rule34.getCommets(limit=3)
+
+print(r+'\n'+'comentarios:', a)
