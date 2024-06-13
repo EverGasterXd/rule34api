@@ -1,6 +1,7 @@
 
-import rule34
+
+import yandereRe 
 a = input()
-r=rule34.search(a, limit=5)
+r=yandereRe.get_random_post(limit=3)
 
 print(r)

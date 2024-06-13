@@ -10,6 +10,7 @@ this api is designed for the connection between rule34 and discord users.
 
 ## Version
 - 0.0.0.7: fix when returning information and improve in README.md
+- 0.0.0.9: new yandere.re
 
 ## Installation
 ```shell
@@ -43,6 +44,20 @@ limit| is the limit of images to be sent
 
 will be the content that will be searched in the api to return the link.
 
+## New yandere.re
+
+### Search
+
+requirements | descriptions
+---|---
+limit| is the limit of images to be sent
+tags | will be the content that will be searched in the api to return the link.
+
+### random_post
+requirements | descriptions
+---|---
+limit| is the limit of images to be sent
+
 ## coming soon
 
 ### rule34 improvements
@@ -58,4 +73,3 @@ Comments | get comments of the image that is being called up
 pages | Description
 ---|---
 booru | will connect to the booru api
-yandere.re | connect to the yandere.re api

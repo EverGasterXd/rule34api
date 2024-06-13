@@ -7,7 +7,7 @@ install_requires = [
 	'requests'
 ]
 
-version = '0.0.0.7'
+version = '0.0.0.9'
 
 setup(
     author='evergaster',
@@ -19,7 +19,7 @@ setup(
     long_description=readme,
     long_description_content_type='text/markdown',
     include_package_data=True,
-    keywords='nsfw and all fetishs',
+    keywords='nsfw rule rule34',
     name='rule34Python',
     python_requires='>=3.0',
     url='https://github.com/EverGasterXd/sara_api',
