@@ -51,7 +51,7 @@ limit| is the limit of images to be sent
 will be the content that will be searched in the api to return the link.
 ## usage yandere.re
 
-to start import rule34Python
+to start import ``rule34Python``
 #### page example
 ```shell
 
