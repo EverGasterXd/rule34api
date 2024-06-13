@@ -5,9 +5,9 @@ from xml.etree import ElementTree
 def get(param=None, limit=3):
     try:
         if param:
-            r = requests.get(f"https://yande.re/post.xml?tags={param}")
+            r = requests.get(f"https://api.rule34.xxx//index.php?page=dapi&s=post&q=index&tags={param}")
         else:
-            r = requests.get("https://yande.re/post.xml")
+            r = requests.get("https://api.rule34.xxx//index.php?page=dapi&s=post&q=index&tags=all")
         r.raise_for_status()
     except Exception as e:
         raise Exception(f"ERROR: > {e}\n\n\nPlease contact Evergaster or open an issue in https://github.com/EverGasterXd/rule34api/issues")

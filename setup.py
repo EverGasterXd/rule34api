@@ -7,7 +7,7 @@ install_requires = [
 	'requests'
 ]
 
-version = '0.0.0.9'
+version = '0.0.1.0'
 
 setup(
     author='evergaster',
