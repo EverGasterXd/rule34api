@@ -1,8 +1,14 @@
 
 
-import rule34
+import yandereRe
 
-r=rule34.search("helltaker", limit=3)
-a= rule34.getCommets(limit=3)
+r = yandereRe.getArtists(name= "neko-baka")
 
-print(r+'\n'+'comentarios:', a)
+
+
+print(f"""
+name: {r.name}
+id: {r.id}
+group_id: {r.group_id if r.group_id else 'no tiene grupo'}
+urls: {'\n'.join(r.urls.split()) if r.urls else 'no tiene links puestos'}
+""")

@@ -1,4 +1,4 @@
-from req import get, get_comments
+from .req import get, get_comments
 
 def search(tags: str = None, limit=int):
     return get(tags, limit)
