@@ -1,11 +1,7 @@
-
-
 import yandereRe
 
 r = yandereRe.getArtists(name= "neko-baka")
-
-
-
+s = yandereRe.search(tags="neko", limit=3)
 print(f"""
 name: {r.name}
 id: {r.id}

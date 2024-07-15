@@ -12,6 +12,7 @@ this api is designed for the connection between rule34 and discord users.
 - 0.0.0.7: fix when returning information and improve in README.md
 - 0.0.0.9: new yandere.re
 - 0.0.1.1: new fuctions, random comments and get artist info yandere.re
+- 0.0.1.3: decorated
 
 ## Installation
 ```shell

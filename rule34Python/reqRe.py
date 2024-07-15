@@ -2,7 +2,7 @@ import requests
 import random
 from xml.etree import ElementTree
 from collections import namedtuple
-import re
+
 Artist = namedtuple('Artist', ['name', 'id', 'group_id', 'urls'])
 
 def get(param: str = None, limit: int = None):
@@ -35,7 +35,7 @@ def get(param: str = None, limit: int = None):
         except Exception as e:
             raise Exception(f"ERROR: > {e}\n\n\nPlease contact Evergaster or open an issue in https://github.com/EverGasterXd/rule34api/issues")
         
-def getArtist(page: int = None, name: str = None) -> Artist:
+def getArtist(page= int, name= str) -> Artist:
     if page is None and name is None:
         raise ValueError('Debe proporcionar un número de página o un nombre de artista.')
 

@@ -1,6 +1,7 @@
 import requests
 import random
 from xml.etree import ElementTree
+from bs4 import BeautifulSoup
 
 def get_comments(post_id:str =None, limit= int):
     if(limit < 0):
@@ -34,7 +35,7 @@ def get(param:str = None, limit= int):
         if param:
             r = requests.get(f"https://api.rule34.xxx//index.php?page=dapi&s=post&q=index&tags={param}")
         else:
-            r = requests.get("https://api.rule34.xxx//index.php?page=dapi&s=post&q=index&tags=all")
+            r = requests.get("https://api.rule34.xxx//index.php?page=dapi&s=post&q=index")
         r.raise_for_status()
     except Exception as e:
         raise Exception(f"ERROR: > {e}\n\n\nPlease contact Evergaster or open an issue in https://github.com/EverGasterXd/rule34api/issues")
