@@ -13,10 +13,11 @@ this api is designed for the connection between rule34 and discord users.
 - 0.0.0.9: new yandere.re
 - 0.0.1.1: new fuctions, random comments and get artist info yandere.re
 - 0.0.1.3: decorated
+- 0.0.1.4: pip install repair
 
 ## Installation
 ```shell
-pip install rule34Py
+pip install rule34Python
 ```
 ## Usage rule34
 to start import ``rule34Python`` 

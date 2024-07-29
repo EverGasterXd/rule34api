@@ -26,7 +26,6 @@ def get(param: str = None, limit: int = None):
         try:
             tree = ElementTree.fromstring(r.content)
             file_urls = [post.attrib['file_url'] for post in tree.findall('post')]
-            comments_id = [post.attrib['id'] for post in tree.findall('post')]
             if file_urls:
                 random_urls = random.sample(file_urls, min(limit, len(file_urls)))
                 return '\n'.join(random_urls)          
